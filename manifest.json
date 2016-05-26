@@ -1,11 +1,13 @@
 {
     "manifest_version": 2,
     "name": "Should Corbyn Resign?",
-    "description": "",
+    "description": "Adds Corbyn sensationalism to Google News.",
     "version": "0.1",
     "icons": {
     	"16": "Icon-16.png",
-    	"48": "Icon-50.png"
+    	"48": "Icon-50.png",
+      "128": "Icon-128.png",
+      "256": "Icon-256.png"
     },
 
     "background": {
@@ -25,10 +27,5 @@
       "js": ["jquery-2.2.3.min.js", "content.js"],
       "run_at": "document_end"
       }
-    ],
-
-    "options_ui": {
-        "page": "options.html",
-        "chrome_style": true
-    }
+    ]
 }
