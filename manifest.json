@@ -20,10 +20,8 @@
 
     "content_scripts": [
     {
-      "matches": [
-        "http://news.google.co.uk/*",
-        "https://news.google.co.uk/*"
-        ],
+      "matches":["http://*/*", "https://*/*"],
+      "include_globs":  ["http://news.google.*/*", "https://news.google.*/*"],
       "js": ["jquery-2.2.3.min.js", "content.js"],
       "run_at": "document_end"
       }
