@@ -1,17 +1,11 @@
 {
     "manifest_version": 2,
-    "name": "Skeleton",
+    "name": "Should Corbyn Resign?",
     "description": "",
     "version": "0.1",
     "icons": {
     	"16": "Icon-16.png",
     	"48": "Icon-50.png"
-    },
-
-    "page_action": {
-    	"default_icon": "Icon-50.png",
-	    "default_title": "Skeleton",
-        "default_popup": "options.html"
     },
 
     "background": {
@@ -20,6 +14,17 @@
     },
 
     "permissions": [
+    ],
+
+    "content_scripts": [
+    {
+      "matches": [
+        "http://news.google.co.uk/*",
+        "https://news.google.co.uk/*"
+        ],
+      "js": ["jquery-2.2.3.min.js", "content.js"],
+      "run_at": "document_end"
+      }
     ],
 
     "options_ui": {
